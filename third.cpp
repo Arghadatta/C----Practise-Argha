@@ -3,15 +3,13 @@
 using namespace std;
 int main()
 {
-    int a= 5;
-    for(int i = 0; i < 5; i++) {
-        cout<<i+1<<endl;
-
-    }
+    int a = 5;
     int* ptr;
+    int** ptr2;
     ptr = &a;
-
+    ptr2 = &ptr;
     cout << ptr <<endl;
-    cout <<*ptr << endl;
-    return 410;
+    cout <<*ptr2 << endl;
+    cout << **ptr2 << endl;
+    return 0;
 }
